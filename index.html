@@ -1,0 +1,357 @@
+
+<html>
+<head>
+<link rel="shortcut icon" href="favicon.ico" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Nino animation</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/sminka.css" type="text/css" />
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/animiranje.min.js"></script>
+	<script type="text/javascript" src="js/anim.js"></script>
+</head>
+<body>
+	<div class="container" style="margin-bottom: 100px;">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Catchy tags</h1>
+			</div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-md-4">
+				<h3>Classic Bootstrap buttons</h3>
+				<hr/>
+				<div style="text-align: center;margin: 50px 0;">
+					<button class="btn btn-default">Normal</button>
+					<button class="btn btn-success">Slow</button>
+					<button class="btn btn-danger">Fast</button>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						HTML code
+					</div>
+					<div class="panel-body">
+					<code>
+					&nbsp;	&lt;button class="btn btn-default"&gt;Normal&lt;/button&gt;<br/>
+					&nbsp;	&lt;button class="btn btn-success"&gt;Slow&lt;/button&gt;<br/>
+					&nbsp;	&lt;button class="btn btn-danger"&gt;Fast&lt;/button&gt;<br/>
+					</code>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						CSS code
+					</div>
+					<div class="panel-body">
+					<code>
+					&nbsp;@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css");<br/>
+					</code>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						JS code
+					</div>
+					<div class="panel-body">
+					<code>
+						$(document).ready(function(){ <br/>
+						&nbsp; $(".btn-success").skoli({speed: 'slow'});<br/>
+						&nbsp; $(".btn-default").skoli();<br/>
+						&nbsp; $(".btn-danger").skoli({speed: 'fast'});<br/>
+						});
+					</code>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<h3>Some html element as an example</h3>
+				<hr/>
+				<div>
+					<div id="model">
+						<span>Hit me!</span>
+					</div>
+				</div>
+				<br/>
+				<br/>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						HTML code
+					</div>
+					<div class="panel-body">
+						<code>
+							&lt;div&gt;<br/>
+							&nbsp;	&lt;div id="model"&gt;<br/>
+								&nbsp;	&lt;span&gt;Hit me!&lt;/span&gt;<br/>
+							&nbsp;	&lt;/div&gt;<br/>
+							&lt;/div&gt;<br/>
+						</code>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						CSS code
+					</div>
+					<div class="panel-body">
+						<code>
+							#model {<br/>
+							&nbsp;margin: 0 auto;<br/>
+							&nbsp;width: 80%;<br/>
+							&nbsp;height: 250px;<br/>
+							&nbsp;background-image: url('http://www.clker.com/cliparts/w/I/N/h/u/a/blue-oval-hi.png');<br/>
+							&nbsp;background-size: 100% 100%;<br/>
+							&nbsp;text-align: center;<br/>
+							&nbsp;font-size: 100px;<br/>
+							&nbsp;padding: 65px 0;<br/>
+							&nbsp;color: white;<br/>
+							&nbsp;cursor: pointer;<br/>
+							&nbsp;transform: matrix3d( 1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1);<br/>
+							&nbsp;-webkit-transform: matrix3d( 1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1);<br/>
+							&nbsp;-moz-transform: matrix3d( 1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1);<br/>
+							&nbsp;-ms-transform: matrix3d( 1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1);<br/>
+							&nbsp;-o-transform: matrix3d( 1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1);<br/>
+							}<br/>
+						</code>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						JS code
+					</div>
+					<div class="panel-body">
+						<code>
+							$(document).ready(function(){ <br/>
+							&nbsp; $("#model").skoli();<br/>
+							});
+						</code>
+					</div>
+				</div>
+				</div>
+		</div>	
+		<hr/>	
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Classic Bootstrap thumbnail</h3>
+				<hr/>
+				<div style="text-align: center;margin: 50px 0;">
+					<a href="#" class="thumbnail" style="margin: auto;width: 65%;">
+						<img src="http://www.ikea.com/PIAimages/0269941_PE407846_S5.JPG" alt="Banner" style="width: 100%;">
+					</a>
+				</div>
+				<br/>
+				<br/>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						HTML code
+					</div>
+					<div class="panel-body">
+					<code>
+						&lt;div&gt;<br/>
+						&nbsp; 	&lt;a href="#" class="thumbnail"&gt;<br/>
+						&nbsp; 	&nbsp; 	&lt;img src="..." alt="..."&gt;<br/>
+						&nbsp; 	&lt;/a&gt;<br/>
+						&lt;/div&gt;<br/>
+					</code>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						CSS code
+					</div>
+					<div class="panel-body">
+					<code>
+					&nbsp;@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css");<br/>
+					</code>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						JS code
+					</div>
+					<div class="panel-body">
+					<code>
+						&nbsp;$(document).ready(function(){ <br/>
+						&nbsp;$(".thumbnail").skoli({<br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;withoutX: true});<br/>
+						&nbsp;});
+					</code>
+					</div>
+				</div>
+			</div>	
+		</div>	
+		<div class="row">
+			<div class="col-md-12">
+				<h3>A custom slider</h3>
+				<hr/>
+				<div id="page">
+					<div id="slider">
+						<div id="slide_container">
+						</div>
+						<img class="slidepic" src="http://placehold.it/1050x450/565353" />
+						<img class="slidepic" src="http://placehold.it/1050x450/9C9696" />
+						<img class="slidepic" src="http://placehold.it/1050x450/840000" />
+						<img class="slidepic" src="http://placehold.it/1050x450/CCA8A8" />
+						<img class="slidepic" src="http://placehold.it/1050x450/8E571F" />
+						<img class="slidepic" src="http://placehold.it/1050x450/1146A9" />
+					</div>
+				</div>
+				<br/>
+				<br/>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						HTML code
+					</div>
+					<div class="panel-body">
+					<code>
+						&lt;div id="page"&gt;<br/>
+						&nbsp;&lt;div id="slider"&gt;<br/>
+						&nbsp;&nbsp;&lt;div id="slide_container"&gt;<br/>
+						&nbsp;&nbsp;&lt;/div&gt;<br/>
+						&nbsp;&nbsp;&lt;img class="slidepic" src="..." /&gt;<br/>
+						&nbsp;&nbsp;&lt;img class="slidepic" src="..." /&gt;<br/>
+						&nbsp;&nbsp;&lt;img class="slidepic" src="..." /&gt;<br/>
+						&nbsp;&nbsp;&lt;img class="slidepic" src="..." /&gt;<br/>
+						&nbsp;&nbsp;&lt;img class="slidepic" src="..." /&gt;<br/>
+						&nbsp;&nbsp;&lt;img class="slidepic" src="..." /&gt;<br/>
+						&nbsp;&lt;/div&gt;<br/>
+						&lt;/div&gt;
+					</code>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						CSS code
+					</div>
+					<div class="panel-body">
+						<p>It is not important. This is just example of animation applied on sliders.</p>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						JS code
+					</div>
+					<div class="panel-body">
+					<code>
+						$(document).ready(function(){ <br/>
+						&nbsp; $("#slider").skoli({<br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clickable: false,<br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;withoutY: true});<br/>
+						&nbsp;});<br/>
+					</code>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-md-12">
+				<h2>1. How to use</h2>
+				<hr>
+				<div class="jumbotron" style="background-color: black;">
+					<ol>
+						<code>
+							<li>&lt;!--  jQuery  --&gt;</li>
+							<li>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"&gt;&lt;/script&gt;</li>
+							<li><br/></li>
+							<li>&lt;!-- Include js plugin --&gt;</li>
+							<li>&lt;script src="js/anim.ugly.js">&lt;/script&gt;</li>
+						</code> 
+					</ol>
+
+				</div>
+				<h2>2. HTML set up</h2>
+				<hr>
+				<div class="jumbotron" style="background-color: black;">
+					<ol>
+						<code>
+							<li>&lt;div id="example"&gt;</li>
+							<li>&nbsp;...</li>
+							<li>&nbsp;Content</li>
+							<li>&nbsp;...</li>
+							<li>&lt;/div&gt;</li>
+						</code> 
+					</ol>
+
+				</div>
+				<h2>3. Call the plugin</h2>
+				<hr>
+				<div class="jumbotron" style="background-color: black;">
+					<ol>
+						<code>
+							<li>$(document).ready(function() {</li>
+							<li>&nbsp;</li>
+							<li>&nbsp;$("#example").skoli();</li>
+							<li>&nbsp;</li>
+							<li>});</li>
+						</code> 
+					</ol>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h2 style="text-align:center">Options</h2>
+			  <table style="width:90%; margin: 0 auto">
+			  	<thead>
+			  		<tr>
+				  		<td>Variable</td>
+				  		<td>Default</td>
+				  		<td>Type</td>
+				  		<td>Description</td>
+			  		</tr>
+			  	</thead>
+			  	<tbody>
+			  		<tr>
+				  		<td>clickable</td>
+				  		<td>true</td>
+				  		<td>Boolean</td>
+				  		<td>Enables/disables animation triggered on click</td>
+			  		</tr>
+			  		<tr>
+				  		<td>speed</td>
+				  		<td>normal</td>
+				  		<td>String</td>
+				  		<td>Sets click animation speed. <br>Other options: 
+				  			<ul>
+				  				<li>slow</li>
+				  				<li>fast</li>
+				  			</ul>
+				  		</td>
+			  		</tr>
+			  		<tr>
+				  		<td>withoutX</td>
+				  		<td>false</td>
+				  		<td>Boolean</td>
+				  		<td>Disables/enables element's rotation around X axis</td>
+			  		</tr>
+			  		<tr>
+				  		<td>withoutY</td>
+				  		<td>false</td>
+				  		<td>Boolean</td>
+				  		<td>Disables/enables element's rotation around Y axis</td>
+			  		</tr>
+			  	</tbody>
+			  </table>
+			</div>
+		</div>	
+	</div>	
+
+  <script>
+	$(document).ready(function(){
+		$("#slider").skoli({clickable: false, withoutY: true});
+		$(".thumbnail").skoli({withoutX: true});
+		$(".btn-danger").skoli({speed: 'fast'});
+		$(".btn-success").skoli({speed: 'slow'});
+		$(".btn-default").skoli();
+		$("#model").skoli();
+		
+		$(".panel-heading").click(function(){
+			$(this).next().slideToggle("fast");
+		});
+	});
+  </script>
+
+
+</body>
+</html>
