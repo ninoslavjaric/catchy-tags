@@ -1,8 +1,5 @@
 /*
-/*
 * Author: Ninoslav Jaric
-* Contact: jaricninoslav@gmail.com
-* Description: This is the only important part of animation. Others are just accompanying stuff.
 */
 $(document).ready(function(){  
 	var trsstr=[[],[],[]];
@@ -105,9 +102,6 @@ $(document).ready(function(){
 			withoutY: false
 		};
 		p=$.extend(_default,p);
-		// if (window.location.hostname.indexOf(String.fromCharCode.apply(String, [110, 105, 110, 111, 115, 108, 97, 118]))==-1) {
-		// 	return false;
-		// };
 		$(this).mousemove(function(e){
 			l=this.getClientRects()[0];
 			var x=e.clientX-l.left-l.width/2;
